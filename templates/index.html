@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurify - Resume Upload</title>
+    <link rel="stylesheet" href="/static/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <p class="name">Aurify</p>
+      <div class="box">
+        <p class="tagline">Hope is the only thing stronger than fear.</p>
+      </div>
+      <div class="job-predictor"><button>Job Predictor</button></div>
+    </div>
+    <div class="hero-section">
+      <p class="hero-text">Accelerate Your Career. One Upload Away.</p>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="{{ url_for('upload_resume') }}" class="btn-primary"
+        >Upload Your Resume</a
+      >
+      <a href="/job-prediction" class="btn-secondary">Job Prediction</a>
+    </div>
+
+    <!--
+    <div class="container">
+      <div class="form-wrapper">
+        
+        <header class="form-header">
+          <h1>Believe in Your Journey</h1>
+          <p>Submit your resume and get guided toward opportunity.</p>
+        </header>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="resume">Upload Your Resume</label>
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              accept=".pdf,.doc,.docx"
+              required
+            />
+          </div>
+
+          <button type="submit">Submit & Get Feedback</button>
+        </form>
+
+        <p class="quote">
+          “Hope is the only thing stronger than fear.” – Suzanne Collins
+        </p>
+      </div>
+    </div>-->
+  </body>
+</html>

@@ -21,6 +21,7 @@
             <h1>Believe in Your Journey</h1>
             <p>Submit your resume and get guided toward opportunity.</p>
           </header>
+          <!--
            <form method="POST" action="{{ url_for('upload_resume') }} enctype="multipart/form-data"">
             <div class="form-group">
               <label for="name">Full Name</label>
@@ -49,7 +50,7 @@
 
             <button type="submit">Submit</button>
           </form>
-<!--
+-->
           <form
             action="{{ url_for('upload_resume') }}"
             method="POST"
@@ -62,7 +63,8 @@
             <input type="file" name="resume_file" accept=".pdf" required />
 
             <button type="submit">Submit</button>
-          </form>-->
+          </form>
+
           <p class="quote">
             “Hope is the only thing stronger than fear.” – Suzanne Collins
           </p>
