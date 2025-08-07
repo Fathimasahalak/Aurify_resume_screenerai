@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='upload_resume.css') }}"
+    />
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <script>
+      alert("{{ messages[0] }}");
+    </script>
+    {% endif %} {% endwith %}
+    <div class="container">
+      <div class="container">
+        <div class="form-wrapper">
+          <header class="form-header">
+            <h1>Believe in Your Journey</h1>
+            <p>Submit your resume and get guided toward opportunity.</p>
+          </header>
+           <form method="POST" action="{{ url_for('upload_resume') }} enctype="multipart/form-data"">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="resume" class="custom-file-label"
+                >Upload Resume</label
+              >
+              <input
+                type="file"
+                id="resume"
+                name="resume_file"
+                accept=".pdf"
+                required
+                class="custom-file-input"
+              />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+<!--
+          <form
+            action="{{ url_for('upload_resume') }}"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" required />
+
+            <label for="resume_file">Choose Resume (PDF):</label>
+            <input type="file" name="resume_file" accept=".pdf" required />
+
+            <button type="submit">Submit</button>
+          </form>-->
+          <p class="quote">
+            “Hope is the only thing stronger than fear.” – Suzanne Collins
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
