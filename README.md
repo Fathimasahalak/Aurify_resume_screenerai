@@ -16,6 +16,7 @@ Use Cases HR automation Campus recruitment Resume quality feedback Files Include
 
 How to Use Go to the homepage of the web app. Click "Upload Resume" button to open the submission form. Upload your resume (PDF format). Upload the job description you want to match it against. Submit the form and wait a few seconds. The system will process your documents and display a compatibility score or result using the integrated relay AI workflow.
 
-Web app deployed link: https://resume-screener-rp6v.onrender.com
+Web app deployed link: https://aurify-resume-screenerai.onrender.com
+<img width="1188" height="123" alt="image" src="https://github.com/user-attachments/assets/db60d5a0-1347-47f8-b457-14dea70422c6" />
 
 License This project is licensed under the MIT License.# resume-screener
