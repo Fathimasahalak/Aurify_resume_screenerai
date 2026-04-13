@@ -1,7 +1,7 @@
 # 🤖 Aurify — AI-Powered Resume Screener
 ### IBM AI/ML Project: *Development of an AI-Powered Resume Screener for Automated Candidate Shortlisting*
 
-> Automating the first step of hiring — so recruiters focus on people, not paperwork.
+
 
 **Team Name:** AutoBrain  
 **Team Members:** Fathima Sahala K, Sreeharini J, Sreya S, Aiswarya S, Girik Sagar, Adhithyan P S, Fahad M K  
